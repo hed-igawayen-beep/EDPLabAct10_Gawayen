@@ -22,12 +22,14 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnWrite = New System.Windows.Forms.Button()
         Me.btnRead = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.btnSort = New System.Windows.Forms.Button()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,6 +84,11 @@ Partial Class Form1
         Me.btnSort.Text = "Sort:"
         Me.btnSort.UseVisualStyleBackColor = True
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -107,4 +114,5 @@ Partial Class Form1
     Friend WithEvents btnRead As Button
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents btnSort As Button
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class
